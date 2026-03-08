@@ -1,61 +1,54 @@
- EduSaviour — AI-Powered Student Dropout Prevention System
+# EduSaviour — AI-Powered Student Dropout Prevention System
 
 EduSaviour is an intelligent web application that predicts student dropout risk using Machine Learning and provides actionable interventions — including government scheme recommendations, parent messaging, and counsellor assignment — to help schools save at-risk students before it's too late.
 
+---
 
-📌 What Problem Does It Solve?
-Student dropout is a serious issue across India, especially in government and rural schools. Teachers often lack the tools to identify which students are silently slipping away. EduSaviour bridges that gap — giving teachers, counsellors, and administrators a data-driven early warning system with built-in intervention tools.
+## 📌 Problem Statement
+Student dropout is a serious issue across India, especially in government and rural schools. Teachers often lack the tools to identify which students are silently slipping away. EduSaviour bridges that gap — giving teachers, counsellors, and administrators a **data-driven early warning system** with built-in intervention tools.
 
+---
 
-👤 Login (Administrator / Counsellor / Teacher)
-         │
-         ▼
-📋 Teacher Enters Student Details
-   (Name, Age, Gender, Class, Attendance,
-    Grades, Behaviour, Family Income, Caste)
-         │
-         ▼
-🤖 Random Forest Model — Predicts Dropout Risk
-         │
-    ┌────┴──────────────────────────────────────┐
-    ▼                    ▼                       ▼
-🟢 LOW RISK      🟡 MODERATE RISK          🔴 HIGH RISK
-               → Scheme Recommendations  → Scheme Recommendations
-               → Parent Message          → Parent Message (Email/WhatsApp)
-                                         → 30-Day Counselling Assignment
-         │
-         ▼
-📊 Student Comparison View
-   (Risk student vs average vs studying student)
-         │
-         ▼
-🗺️ District-wise Dropout Heatmap
-   (Visual hotspot map across districts/schools)
-         │
-Counsellor Dashboard
-   (View assigned students → Submit feedback → Track outcomes)
+## 👤 Workflow
+1. **Login** (Administrator / Counsellor / Teacher)  
+2. **Teacher enters student details** (Name, Age, Gender, Class, Attendance, Grades, Behaviour, Family Income, Caste)  
+3. **Random Forest Model predicts dropout risk**  
+🟢 LOW RISK 🟡 MODERATE RISK 🔴 HIGH RISK
+→ Scheme Recommendations → Scheme Recommendations
+→ Parent Message → Parent Message (Email/WhatsApp)
+→ 30-Day Counselling Assignment
 
-   
-🌟 Key Features at a Glance
-FeatureDescription
-🔐 Role-based LoginSeparate access for Admin, Teacher, Counsellor
-🤖 Risk PredictionLow / Moderate / High dropout risk via Random Forest
-🔍 Factor ExplanationTop 3 influencing factors shown per prediction
-🏛️ Scheme RecommenderEligible government schemes auto-matched to student profile
-💬 Message GeneratorPersonalised parent messages in Tamil 
-📧 Direct DeliveryOne-click Email & WhatsApp message sending
-🩺 Counselling Planner30-day counselling assignment with session scheduling
+4. **Student Comparison View** – Risk student vs average vs safe student  
+5. **District-wise Dropout Heatmap** – Visual hotspot map across districts/schools  
+6. **Counsellor Dashboard** – View assigned students → Submit feedback → Track outcomes
 
-📊 Comparison ChartsRisk student vs average vs safe student visualisation
-🗺️ District Heatmap Geographic dropout hotspot map
-📝 Feedback TrackerCounsellors submit feedback and track student outcomes
+---
 
+## 🌟 Key Features
+| Feature | Description |
+|---------|-------------|
+| 🔐 Role-based Login | Separate access for Admin, Teacher, Counsellor |
+| 🤖 Risk Prediction | Low / Moderate / High dropout risk via Random Forest |
+| 🔍 Factor Explanation | Top 3 influencing factors shown per prediction |
+| 🏛️ Scheme Recommender | Eligible government schemes auto-matched to student profile |
+| 💬 Message Generator | Personalised parent messages in Tamil |
+| 📧 Direct Delivery | One-click Email & WhatsApp message sending |
+| 🩺 Counselling Planner | 30-day counselling assignment with session scheduling |
+| 📊 Comparison Charts | Risk student vs average vs safe student visualisation |
+| 🗺️ District Heatmap | Geographic dropout hotspot map |
+| 📝 Feedback Tracker | Counsellors submit feedback and track student outcomes |
 
+---
 
+## 🛠 Tech Stack
+- Python (Flask)
+- streamlit for frontend
+- Random Forest ML model for prediction
+- Parent Messaging: Automated personalized messages sent via SMTP
 
-   
+---
 
-         
-         ▼
-👩‍⚕️ Counsellor Dashboard
-   (View assigned students → Submit feedback → Track outcomes)
+## ⚡ Installation & Usage
+1. Clone this repo:  
+```bash
+git clone <your_repo_link>
