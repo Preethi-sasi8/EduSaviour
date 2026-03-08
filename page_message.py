@@ -12,8 +12,8 @@ def show():
     result = st.session_state.get("result", {})
     risk   = result.get("Risk_Level", "Moderate") if result else "Moderate"
 
-    st.title("✉️ பெற்றோர் செய்தி உருவாக்கி")
-    st.markdown("##### Parent Message Generator — Tamil")
+    st.title("Parent Message Generator — Regional language")
+
     st.markdown("---")
 
     # Risk badge
