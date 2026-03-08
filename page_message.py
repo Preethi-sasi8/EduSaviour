@@ -88,7 +88,7 @@ def show():
 
         if success:
             st.success(f"✅ Email வெற்றிகரமாக அனுப்பப்பட்டது! 📧 **{parent_email}** க்கு சென்றது.")
-            st.balloons()
+
             with st.expander("📄 அனுப்பப்பட்ட செய்தி காண்க"):
                 st.markdown(f"**To:** {parent_email}")
                 st.text(message)
@@ -114,10 +114,6 @@ def show():
     # ── Navigation ─────────────────────────────────────────────
     col1, col2 = st.columns(2)
     with col1:
-        if st.button("⬅️ Back to Results", use_container_width=True):
+        if st.button("⬅ Back to Results", use_container_width=True):
             st.session_state.page = "main"
-            st.rerun()
-    with col2:
-        if st.button("🏛️ View Schemes", use_container_width=True):
-            st.session_state.page = "schemes"
             st.rerun()

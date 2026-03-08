@@ -67,10 +67,6 @@ def show():
 
     col1, col2 = st.columns(2)
     with col1:
-        if st.button("⬅️ Back to Schemes", use_container_width=True):
+        if st.button("⬅ Back to Schemes", use_container_width=True):
             st.session_state.page = "schemes"
-            st.rerun()
-    with col2:
-        if st.button("✉️ Send Message to Parents", use_container_width=True, type="primary"):
-            st.session_state.page = "message"
             st.rerun()
